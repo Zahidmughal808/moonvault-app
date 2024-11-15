@@ -1,0 +1,391 @@
+@import "./variables.css";
+
+/* App Header css */
+img {
+  max-width: 100%;
+}
+.top-header {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-sticky.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  z-index: 22;
+  background-color: #000;
+  animation: stickyHeaderSlide 0.999s linear;
+}
+.logo-holder img {
+  max-width: 100%;
+  object-fit: fill;
+  height: 50px;
+}
+.logo-holder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo-holder h2 {
+  color: var(--colorDullGrey);
+}
+.menu-holder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-list li a {
+  text-decoration: none;
+  color: var(--colorNavBarText);
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.auth-holder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.common-btn {
+  box-shadow: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.login-btn {
+  background: none;
+}
+.marquee-holder {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-width: 100%;
+  animation: marqueeScroll linear 500s infinite;
+}
+.mrquee-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 40px;
+}
+.mrquee-body p {
+  font-size: 14px;
+  color: var(--colorGreen);
+}
+p.description {
+  color: var(--colorDullGrey);
+}
+.nowlive {
+  width: 100%;
+  max-width: 157px;
+  font-size: 12px;
+}
+.blinker {
+  font-size: 20px;
+  animation: liveBlinker linear 4s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.top-section:before {
+  background: linear-gradient(0deg, #000, #0000);
+  bottom: 0;
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+}
+
+.footer-logo-holder img {
+  max-width: 100%;
+  height: 64px;
+}
+.footer-logo-holder h2 {
+  font-size: 32px;
+}
+.footer-logo-holder h4 {
+  font-size: 22px;
+}
+.footer-logo-holder p {
+  font-size: 12px;
+}
+.footer-section h5 {
+  color: #e4e4e4;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  width: max-content;
+  text-transform: uppercase;
+}
+.footer-section {
+  width: 100%;
+  max-width: 1370px;
+  background: #000;
+}
+.footer-body {
+  background: linear-gradient(0deg, #00002f, #0000);
+}
+.footer-menu ul li {
+  width: max-content;
+}
+.footer-menu ul li a {
+  font-size: 12px;
+}
+.social-links h4 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-end-bottom p {
+  font-size: 8px;
+}
+.section-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.invite-community-section {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.invite-links a {
+  font-family: monospace, sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.invite-links a:before {
+  content: "[";
+  font-size: 16px;
+  left: -10px;
+  position: absolute;
+  top: -2px;
+  transition: 0.3s;
+}
+.invite-links a:after {
+  content: "]";
+  font-size: 16px;
+  position: absolute;
+  right: -10px;
+  top: -2px;
+  transition: 0.3s;
+}
+.invite-links a:hover {
+  color: var(--colorBlue);
+}
+.invite-links a:hover:before {
+  left: -5px;
+}
+.invite-links a:hover:after {
+  right: -5px;
+}
+.community-banner img {
+  max-width: 100%;
+}
+.video-holder video {
+  object-fit: fill;
+}
+.vault-card-content h1 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+}
+.vault-card-content h2 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.vault-card-content p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+}
+.starr-banner .starr-loop {
+  height: 600px;
+  animation: ringRotate 20s linear infinite;
+}
+.starr-banner .earth-shape {
+  object-fit: fill;
+}
+.starr-banner .content {
+  max-width: 580px;
+}
+.starr-banner .content > div {
+  max-width: 205px;
+}
+.starr-banner p {
+  font-size: 11px;
+  line-height: 14px;
+}
+.start-content {
+}
+.starr-content-card p {
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.starr-content-card:before {
+  content: "";
+  background: #6142ff;
+  position: absolute;
+  width: 5px;
+  height: 35%;
+  left: -5px;
+  z-index: 1;
+}
+.starr-content-card:after {
+  content: "";
+  background: #6142ff;
+  position: absolute;
+  width: 5px;
+  height: 35%;
+  right: -5px;
+  z-index: 1;
+}
+.overview-card-item {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.overview-card-item p {
+  font-size: 10px;
+  line-height: 20px;
+}
+.token-card-items {
+}
+.token-card-content img {
+  max-width: 55px;
+}
+.token-card {
+  height: 300px;
+}
+.token-card-content h2 {
+  font-size: 14px;
+}
+.token-card p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.bottom-side-cards {
+  animation: slideMove 0.999s linear;
+}
+.medium-link {
+  font-weight: 300;
+}
+.medium-link:before {
+  content: "[";
+  font-size: 14px;
+  left: -10px;
+  position: absolute;
+  top: 0px;
+  transition: 0.3s;
+}
+.medium-link:after {
+  content: "]";
+  font-size: 14px;
+  position: absolute;
+  right: -10px;
+  top: 0px;
+  transition: 0.3s;
+}
+.medium-link:hover {
+  color: var(--colorBlue);
+}
+.medium-link:hover:before {
+  left: -5px;
+}
+.medium-link:hover:after {
+  right: -5px;
+}
+.summary-section h2 {
+  font-size: 12px;
+  font-weight: 300;
+}
+.summary-section h1 {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.summary-section p {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.coin-marquee-holder {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-width: 100%;
+  animation: marqueeScroll linear 500s infinite;
+  gap: 40px;
+}
+.coin-mrquee-body {
+  border-radius: 8px;
+  min-width: 314px;
+  max-width: 314px;
+  min-height: 64px;
+  max-height: 64px;
+}
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes liveBlinker {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ringRotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes slideMove {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes stickyHeaderSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

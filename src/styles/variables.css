@@ -1,0 +1,27 @@
+:root {
+    /* Font family */
+    --fontFamilyPPMondwest-Regular: PPMondwest-Regular, sans-serif
+    --fontFamilyPPSupplyMono-Regular: PPSupplyMono-Regular, sans-serif;
+    --fontFamilyPPNeueBit-Bold: PPNeueBit-Bold, sans-serif;
+  
+    /* Content Body Width */
+    --standardWidthContent: 1280px;
+    --laptopWidthContent: 1360px;
+    --largeWidthContent: 1440px;
+    --fullWidthContent: 1600px;
+  
+    /* Colors */
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorBlackLight: #000000e6;
+    --colorLightGrey: #e4e4e4;
+    --colorDullGrey: #d4d4d4;
+    --colorNavBarText: #fcfcfc;
+    --colorBorderBlue: #6142ff;
+    --colorGreen: #b8fd8e;
+    --colorBlue: #6142ff;
+}
+
+
+
+@import './common.css'

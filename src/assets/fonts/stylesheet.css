@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PP Supply Mono';
+    src: url('PPSupplyMono-Regular.eot');
+    src: url('PPSupplyMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PPSupplyMono-Regular.woff2') format('woff2'),
+        url('PPSupplyMono-Regular.woff') format('woff'),
+        url('PPSupplyMono-Regular.ttf') format('truetype'),
+        url('PPSupplyMono-Regular.svg#PPSupplyMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

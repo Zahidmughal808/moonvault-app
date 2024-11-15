@@ -1,13 +1,69 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+html,body {
+  margin: 0;
+  font-family: PPSupplyMono-Regular, sans-serif;
+  overflow-x: hidden;
+  background-color: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "PPMondwest-Regular";
+  src: url("./assets/fonts/PPMondwest-Regular.eot");
+  src: url("./assets/fonts/PPMondwest-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/PPMondwest-Regular.woff") format("woff"),
+    url("./assets/fonts/PPMondwest-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PPMondwest-Regular.ttf") format("truetype"),
+    url("./assets/fonts/PPMondwest-Regular.svg#svgFontName") format("svg");
+}
+@font-face {
+  font-family: "PPNeueBit-Bold";
+  src: url("./assets/fonts/PPNeueBit-Bold.eot");
+  src: url("./assets/fonts/PPNeueBit-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/PPNeueBit-Bold.woff") format("woff"),
+    url("./assets/fonts/PPNeueBit-Bold.woff2") format("woff2"),
+    url("./assets/fonts/PPNeueBit-Bold.ttf") format("truetype"),
+    url("./assets/fonts/PPNeueBit-Bold.svg#svgFontName") format("svg");
+}
+@font-face {
+  font-family: "PPSupplyMono-Regular";
+  src: url("./assets/fonts/PPSupplyMono-Regular.eot");
+  src: url("./assets/fonts/PPSupplyMono-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/PPSupplyMono-Regular.woff") format("woff"),
+    url("./assets/fonts/PPSupplyMono-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PPSupplyMono-Regular.ttf") format("truetype"),
+    url("./assets/fonts/PPSupplyMono-Regular.svg#svgFontName") format("svg");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontFamilyPPMondwest-Regular);
+}
+/* COLOR FOR SECTION NAMES */
+h4 {
+  color: var(--colorNavBarText);
+}
+/* COLOR FOR HEADING */
+h3 {
+  color: var(--colorLightGrey);
+}
+/* COLOR FOR THE CONTENT */
+p {
+  color: var(--colorDullGrey);
+}
+
+p,
+span,
+button {
+  font-family: var(--fontFamilyPPMondwest-Regular);
 }
